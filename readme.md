@@ -1,5 +1,6 @@
 # Introduction
 This is a small and simple util/script which you can use to detect if your (handheld retro) console is (or at least should be) compatible with my scripts, programs, drivers, tweaks etc.  
+  
 <strong>TIP:</strong> On my [website](https://www.teamxnl.com/R36-XCC) you can also see a screenshot/photo of how the XNL Compatibiliy Check should look if your console passes the checks.
 
 ## Current Version 1.0
