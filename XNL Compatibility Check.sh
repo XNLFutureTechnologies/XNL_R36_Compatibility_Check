@@ -18,7 +18,7 @@
 #
 #------------------------
 # Website: http://www.teamxnl.com/R36-XCC
-# YouTube: https://www.youtube.com/XNLFutureTechnologies
+# YouTube: https://www.youtube.com/@XNLFutureTechnologies
 # License: MIT (Basically put: Credits/Attribution and license inclusion required)
 #------------------------
 #
