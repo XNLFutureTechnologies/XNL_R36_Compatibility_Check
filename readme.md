@@ -4,6 +4,9 @@ This is a small and simple util/script which you can use to detect if your (hand
 <strong>TIP:</strong> On my [website](https://www.teamxnl.com/R36-XCC) you can also see a screenshot/photo of how the XNL Compatibiliy Check should look if your console passes the checks.
 
 ## Current Version 1.0
+This tool will also create a small "registration file" on your console which basically tells my other scripts, programs, drivers etc if your console has previously passed or failed the check. This can then be used to warn users that they are for example trying to install a driver which is not recommended for their device. This is however an empty file which does not contain ANY device (or personal for that matter) information. This file is stored as <strong>/home/ark/.config/.xnlft-xcc-checkfail</strong> if the system previously failed the check, and it will be stored as <strong>/home/ark/.config/.xnlft-xcc-checkpass</strong> if the system previously passed the check.  
+  
+I do however also recommend to read the latest information in regards to R36 Clones and possible false positive system passed messages on my main website: https://www.teamxnl.com/R36-XCC  
   
 ## How to install:
 1. Simply download the files (you can also get them from my website directly here: https://www.teamxnl.com/R36-XCC)  
