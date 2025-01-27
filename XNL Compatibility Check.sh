@@ -17,7 +17,7 @@
 # menu (or RetroPie menu depending on your Theme).
 #
 #------------------------
-# Website: http://www.teamxnl.com/R36-XCC
+# Website: http://www.teamxnl.com/XNL-R36-XCC
 # YouTube: https://www.youtube.com/@XNLFutureTechnologies
 # License: MIT (Basically put: Credits/Attribution and license inclusion required)
 #------------------------
@@ -140,6 +140,16 @@ SystemHasMinimalVersionArkOK() {
 	# Check if we have a the ark config folder and abort if we haven't (we don't want to mess with other RetroConsole interfaces!)
 	if [ ! -d "$ConfigDir" ]; then
 		dialog --backtitle "$Application" --title "Incompatibility Issue Detected!" --msgbox "Unable to detect the directory:\n$ConfigDir\n\nAre you sure that you are running ArkOS on your device?\n\nIf this folder can't even be found, then it's unfortunately a hard no in terms of compatibility.\n\nThe XNL Compatibility Check will now abort\n\n " 12 $swidth
+		
+		# IF for some reason there was previously a 'system passed' registration on this installation
+		# then we will now remove it due to this fail
+		if [ -f /home/ark/.config/.xnlft-xcc-checkpass ]; then
+			sudo rm -f /home/ark/.config/.xnlft-xcc-checkpass
+		fi
+
+		# make a 'XCC Failed registration' so that my other applications can detect (and warn users) that
+		# the current system has failed the XNL Compatibility Check!
+		sudo touch /home/ark/.config/.xnlft-xcc-checkfail
 		exit 1
 	fi
 	
@@ -149,6 +159,17 @@ SystemHasMinimalVersionArkOK() {
 
 	if [ -z "$CurrentVer" ]; then
 		dialog --backtitle "$Application" --title "Incompatibility Issue Detected!" --msgbox "Unable to detect ANY ArkOS updates in the directory:\n$ConfigDir\n\nAre you sure that you are running on a valid ArkOS installation?\n\nIf these updates can't be detected, then it's unfortunately a hard no in terms of compatibility.\n\nThe XNL Compatibility Check will now abort\n\n " $height $swidth
+
+		# IF for some reason there was previously a 'system passed' registration on this installation
+		# then we will now remove it due to this fail
+		if [ -f /home/ark/.config/.xnlft-xcc-checkpass ]; then
+			sudo rm -f /home/ark/.config/.xnlft-xcc-checkpass
+		fi
+
+		# make a 'XCC Failed registration' so that my other applications can detect (and warn users) that
+		# the current system has failed the XNL Compatibility Check!
+		sudo touch /home/ark/.config/.xnlft-xcc-checkfail
+
 		exit 1
 	fi
 
@@ -179,6 +200,7 @@ StartUpApp(){
 	local DistroFail="n"
 	local BootFilesFail="n"
 	local ResolutionFail="n"
+	local MainPass="y"
 	
 	if ! SystemHasMinimalVersionArkOK "$RequiredVersionArkOS"; then
 		let ErrorsFound++
@@ -199,6 +221,7 @@ StartUpApp(){
 		KernelFail="y"
 		ResultOutput+="[FAIL] Kernel Version ($IntendedKernel)\n"
 		ResultOutput+="       - Detected Version: $DetectedKernel\n"
+		MainPass="n"
 	else
 		ResultOutput+="[PASS] Kernel Version ($IntendedKernel)\n"
 	fi
@@ -210,6 +233,7 @@ StartUpApp(){
 		ResultOutput+="[FAIL] Linux Distro ($RequiredLinux)\n"
 		ResultOutput+="       - Detected: $DetectedLinux\n"
 		DistroFail="y"
+		MainPass="n"
 	else
 		ResultOutput+="[PASS] Linux Distro ($RequiredLinux)\n"
 	fi
@@ -218,6 +242,7 @@ StartUpApp(){
 		let ErrorsFound++
 		BootFilesFail="y"
 		ResultOutput+="[FAIL] R36S/R36H/RG351MP Boot Files Not Found\n"
+		MainPass="n"
 	else
 		ResultOutput+="[PASS] R36S/R36H/RG351MP Boot Files Detected\n"
 	fi
@@ -235,6 +260,7 @@ StartUpApp(){
 		ResolutionFail="y"
 		ResultOutput+="[FAIL] Resolution Check (640x480)\n"
 		ResultOutput+="       - Detected: $resolution\n"
+		MainPass="n"
 	else
 		ResultOutput+="[PASS] Resolution Check (640x480)\n"
 	fi
@@ -255,6 +281,7 @@ StartUpApp(){
 			MessageOutput+=" It most likely is an R36S/R36H an RG351MP or an RGB10X. Do however yet again keep in mind that my releases are "
 			MessageOutput+="ONLY intended to be used with the R36S or R36H.\n\n"
 		else
+			MainPass="n"
 			MessageOutput+="XNL Compatibility Check Result:\n"
 			MessageOutput+="INCOMPATIBLE (most likely)\n"
 			MessageOutput+="\n"
@@ -306,8 +333,28 @@ StartUpApp(){
 	fi
 
 	MessageOutput+="\n\n"
-	MessageOutput+="NOTE: Despite if your device turns out to be compatible or not, using my tools, tweaks, programs ect are at your own risk.\n\n "
+	MessageOutput+="NOTE: Despite if your device turns out to be compatible or not, using my tools, tweaks, programs ect are at your own risk.\n\n"
+	MessageOutput+="CLONE DEVICES WARNING:\nThere are quite a lot of clones of the R36S and R36H, which have quite a few issues in both quality and compatibility, please make sure you are running the real R36S or R36H by checking this website if you are not certain:\nhttps://handhelds.miraheze.org/wiki/R36S_Clones\n\n "
+	
+	
+	
 
+	# Here we'll "register" if the XNL Compatibility Check has previously passed or failed on this system
+	# we can then use this in my/our other applications to for example warn the user that it is for example
+	# not recommended to install a certain driver, application etc 
+	if [[ $MainPass == "y" ]]; then
+		if [ -f /home/ark/.config/.xnlft-xcc-checkfail ]; then
+			sudo rm -f /home/ark/.config/.xnlft-xcc-checkfail
+		fi
+	
+		sudo touch /home/ark/.config/.xnlft-xcc-checkpass
+	else
+		if [ -f /home/ark/.config/.xnlft-xcc-checkpass ]; then
+			sudo rm -f /home/ark/.config/.xnlft-xcc-checkpass
+		fi
+	
+		sudo touch /home/ark/.config/.xnlft-xcc-checkfail
+	fi
 
 	dialog --title "XNL Compatibility Check Results ($XCCVersion)" --msgbox "$MessageOutput" 20 80
 	exit 0
