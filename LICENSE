@@ -1,3 +1,114 @@
-XNL Custom License
+BY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING THIS PROJECT, PRODUCT, FILES OR ANY PART THEREOF (AND THE RELATED DOCUMENTATION) FROM XNL FUTURE TECHNOLOGIES, YOU ON BEHALF OF YOURSELF, OR ON BEHALF OF ANY ENTITY BY WHICH YOU ARE EMPLOYED AND/OR ENGAGED AGREE TO BE BOUND TO THIS LICENSE AGREEMENT.
 
-UPDATING PLEASE HOLD...
+# Simplified License
+I know it can be (and often is) very cumbersome to check what you can and can’t do with projects, source-codes etc, therefor I will most of the time (in case of open-source projects) provide a simple and easy to understand simplified license explaining in ‘short lines’ what you can do with the project and/or it’s files. For full commercial use I would however still strongly recommend to read the entire full license!
+
+## Main License Rules
+– As stated in the full license, this software comes “as-is” without any warranty, use of this software or portions of it is  
+at your own risk (IMPORTANT: The official legal part of this can be found in the full license!).  
+– Credits (both ours and possible additional credits if we (re-)used code from others) should remain intact at all times  
+Note: This also includes that it’s mandatory to for example leave the original links to our website(s), GitHub etc in the source code  
+– If you re-release or redistribute the software (modified or unmodified), you take responsibility for providing support for your version.  
+– You can use, modify, and include this software in your own projects. However, you must provide the full source code  
+of any modified parts of THIS software to your users. Your project does not need to be (or become) fully open-source  
+when using this project (or portions of it), but any portions of this software used in your project must remain open-source.  
+TIP: If your project needs to be closed-source, then use libraries (like DLL’s) for the parts of this project you’re (re-)using  
+– If you distribute a compiled stand-alone version of this project (if applicable), you must provide an additional license  
+file containing the original author’s information, project name, links, and copyright details.  
+  
+<strong>What you can do with this project:</strong>  
+– Use, edit/modify the code to suit your needs or your project  
+– Re-release the software (modified or unmodified) while maintaining and meeting the attribution and license requirements.  
+This for example also includes forking (or uploading) it on your own GitHub  
+– Use this project or parts of it for commercial purposes including but not limited to in-business use, selling the software etc  
+– Bundle this software with your own project, software, or service.  
+– Include your own copyright/attribution info when distributing modified versions, but the original credit to  
+XNL Future Technologies (including the original project name and link(s)) must remain intact.  
+  
+<strong>What you can’t do with this project:</strong>  
+– Claim ownership of the software or its code.  
+– Use or claim any trademarks of XNL Future Technologies associated with the software.  
+– Remove or alter any copyright or license information in the source code or documentation.  
+– Make the software closed-source and redistribute or sell it as such (share-alike!)  
+– Change the license, license type or impose additional restrictions  
+  
+<strong>Notes:</strong>  
+– This simplified license is meant to clarify the main points. For complete legal information, please refer to the full license agreement.  
+– If you are using this software in a commercial context, we strongly recommend reviewing the full terms in the complete license file.  
+
+
+# Full License  
+## Open Source License
+This section covers the source-code files of this software, download, project and/or product.
+
+TIP: Some of our open source programs, scripts etc which are 'open-scripts' (think about shell scripts, lua etc) will often contain a simple and easy block at the top to instantly comply with all the license requirements without too much fuzz 😊. (Given that you don't violate other possible rules of the license like for example: "No commercial use" if that applies to that specific license of course.)
+Educative purposes
+
+The main purpose of us publishing the source code's of our (software) projects is to educate others, to inspire others and (often) to give others a 'foundation' for their own (personal) projects (these are the 'Foundation Projects'). Our source codes should (in nearly all cases) not be used to produce commercial products.
+Foundation Projects/Downloads
+
+Projects/Downloads and/or Source Codes which are 'marked' as 'Foundation Projects' are actually intended to build and/or design your own projects and/or products with. These are often intended as 'starter-kits' so that you can get started to make your own projects and/or products with it. Projects/products which you have build-up these 'Foundation Projects' can be used and/or published (even commercially) if you like. It however is (obviously) important that you have put a significant amount of work into the foundation project to make it your own project/product. And it should still not violate the general license terms for the Foundation Project (meaning that it is for example not allowed to use a Foundation Project to make your own project/product which could for example hurt/damage other people or damage their property, reputation, business etc).
+Commercial Use and/or Redistribution
+
+If you are inspired by one of our source codes and you make your own version of it (from scratch) and are just using a 'couple snippets' to make your own product (which you intend to redistribute and/or sell), then you are allowed to do so. It is however important that you give credit where credit's is due, and that a signification portion your publication (>90%) should consist out of your own work.
+
+Obviously you don't have to credit us for things like for example simple 'if block structures' or a (commonly known/used) simple formula to calculate something. But if you are using entire (either slightly modified or unaltered) functions, modules etc, then you are required to credit us/the original code (for example in the about screen, the documentation and/or the source code).
+Reusing graphics, sound files, music, 3d models, animations and/or other elements
+
+In 99% of the cases it is not allowed to reuse any of the graphics or other (graphical) elements included in our source codes for your own project(s). If you are (re-)making your own version based on a source code of one of our projects/products, then unless otherwise stated for this particular project, you are required to create your own (graphical) elements like clip-arts, illustrations, icons etc. The same goes for example for 3D models, animations and audio files etc included in the source code.
+
+This basically means: That if it is not explicitly stated for the project's/product's source code that you can reuse the included images, sound files, 3D models, animations etc, that you are not allowed to reuse them for your own project(s) if you are planning to redistribute them (either free or commercial).
+Rebranding and then (re)publishing
+
+For some (beginner) 'programmers' it might seem tempting to just change some UI/interface aspects like icons/graphics, text labels (changing the copyright/creator info and the application name), re-arranging some interface controls and then slapping their own logo on it to (re-)publish it as their 'own program'. This type of (re-)distribution is not allowed and is considered taking credit for our work. We will not hesitate to take (legal) action against this and possibly even publicly call you out on it. Simply because these kind of publications are quite demotivating when people are putting in quite a lot of effort to create educative content/source-code's for others to learn from just for to be 'stolen' by someone-else who falsely takes credit for it.
+
+Am I allowed to make changes to the source code only for my own use, for my dad or for some of my friends for example?
+Yes, but read on first 😉:
+Sure you can, that is actually how I myself (and several others on the XNL Future Technologies team) have started programming years ago. It is however very important to note that you are not allowed to publicly publish your modified/changed version online if it's not actually a Foundation Project (which are intended to be re-used and can be re-published). But if you are using our source codes to make 'custom versions' for yourself, your family and/or your friends (while not publishing them publicly) then you are of course allowed to do so. I would even recommend you to share your own 'custom versions' with your family and friends (offline/non-publicly that is of course), so that you get a 'testing audience' which gives you an opportunity to actually learn to deal with 'bug reports' and feature requests by your (small) 'user base' 😊
+
+A small tip though (and I'm speaking from experience here😉): Always keep a copy of the original source code(s) as back up, and make comments in your (modified/custom) code to mark which sections you have used from other people's source codes for example. This way you can still 'back-track' what you did if you look back at your projects decades later 😉.
+Use at own risk
+
+Any use and/or re-use of our source codes and/or portions of it is at your own risk.
+
+## Commercial Use Allowed
+Commercial use of this project, product, it's files, download(s) etc is allowed, which means that you are allowed to use it for own financial gain, there could be however (additional) restrictions included in a license (or licenses) which is supplied (within) the project, product, download(s) etc which limits the extent of how (far/much) you are allowed to use it commercially. By using, downloading or otherwise using this project, product, it's files and/or download(s), you confirm that you will first check the supplied content/download(s) for additional licenses to see if there (additional) restrictions which limit the extend of the Commercial Use Allowed Permission Clause, before using it for commercial purposes in any way.
+
+A project/product which for example does allow Commercial Use within your company or organization under certain (licensing) conditions but does not allow you to (re-)sell the project/product would be XEWA™. When you consult the XEWA™ License (which is provided with, and build-into XEWA™), you will find this (additional) license information and/or limitations in the 'included license'.
+
+If the project, product, code, files etc don't include any (additional) license(s), then you are allowed to use this project, product, it's files, download(s) etc, in any possible way for commercial use (including (re-)selling it. If there however is an (additional) license included with the project, product, it's files or download(s) you hereby agree that you will also read that license and accept that license prior to using the project, product or file(s), and that you will refrain from using the obtained 'content' in any way if you can't (or don't want to) agree to the (additionally) included license(s).
+
+IMPORTANT NOTE:
+Make sure that you also consult the rest of the license(s) to see if clauses/rules like Attribution Required or ShareAlike for example apply, because even if you are allowed to use the product for any type of commercial use, it could still be that attribution required or ShareAlike 'rules' apply.
+
+## ShareAlike
+Our ShareAlike Clause means that if you are are for example allowed to share/redistribute modified versions of this project, product, it's files, download(s) etc, that you have to share it under the same conditions as this original work.
+
+Some examples of what this means for you:
+
+    If the rest of the license for example permits you to modify and then redistribute your own 'adaption/version' of this project, product, it's files etc, you would then need to comply with the following 'rules':
+        If this original project, product, it's files or download(s) etc are 'open-source' (provide source code/files with it), then your modified version can only be published/redistributed if you also supply your (adapted/modified) source code along with it.
+        This also means that you are not allowed to take a project, product etc with the 'ShareAlike Clause' in it's license from our website, modify it and then start redistributing or even selling it as 'closed-source' only.
+        You are not allowed to 'remove' clauses or 'rules' from the original license (just to give an example: You are not allowed to remove the 'Attribution Required' or the 'Commercial Use Not Allowed' clauses from your version/license).
+        You are not allowed to restrict the original license with additional clauses and/or rules of your own.
+
+We can understand it if some developers/creators put a lot of effort in 'upgrading' existing works, but that they would not like our (for example) 'keep open-source also open-source on redistribution rules', but all I/we can say about that is: Sorry, but that's the 'game of this license'. If you don't like it, then just create your own stuff from scratch 😉
+
+The ShareAlike clause (obviously) also remains fully enforced if you decide to redistribute unaltered versions, and thus the same 'rules and examples' as shown above would apply, but to the unaltered version/re-distribution.
+
+
+## Logo & Branding Copyright
+XNL Future Technologies™, XNL TV™, XEWA™, TeamXNL™, System166™, The XNL Ft logo, The XNL Future Technologies logo, The XNL TV logo, The E-Series "Flamingo Logo", The XNL E-Academy Logo, The Overkill Edition Logo, The XEWA logo, The System166 Logo, The Sophie The Pigeon 8-Bit logo and others are trademarks or registered trademarks of XNL Future Technologies in The Netherlands and other countries. Other terms, project, product or brand-names and/or logo's may be trademarks of others.
+
+XNL Future Technologies is not associated and does not claim to be associated with any company or product that might have been mentioned in their documentation unless explicitly stated otherwise.
+Legal & Disclaimer(s)
+
+## SIMPLIFIED DISCLAIMER
+The use of our projects, products, schematics or other files is at your own responsibility and they are provided “AS-IS”, without ANY WARRANTY. Use of the content on or from our website(s) is 100% at your own risk. Please realize that most of the 'stuff' that we offer on our website is intended for the enthusiasts, and thus it is designed/meant to be adapted, expanded or adjusted for use in 'larger' projects. Or that it is meant as a basic guideline to get started on a project of your own. Some products that we used (or have used) internally in our company will be shared with the public so that others can enjoy these modules or products also. For all these projects, product, files etc goes: USE AT OWN RISK! Some projects or products that we use internally do not have build in security measures (like reverse polarity protection for example!), this is to keep the costs at internal (test) stages as low as possible or due to the fact that the product is intended to be used in only one particular way! Keep this in mind when using, building or even buying these projects or products. If you're not sure what you're doing or if you don't trust a certain product, schematic, sample or anything else: USE YOUR INSTINCT and DO NOT CONTINUE, If you DO want to continue working on or with the project, product, source-code, sample, printed circuit board, model, schematic etc: Again: AT YOUR OWN RISK. The same goes for using our software (either closed source or other included binaries): USE A YOUR OWN RISK.
+
+## OFFICIAL DISCLAIMER
+THE SOFTWARE, PROJECTS, SCHEMATICS, INFORMATION, SOURCE CODE, SAMPLES, FILES, 3D MODELS AND PRODUCTS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL XNL FUTURE TECHNOLOGIES BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE, PROJECTS, SCHEMATICS, INFORMATION, SOURCE CODE, SAMPLES, PRODUCTS OR THE USE OR OTHER DEALINGS IN THE SOFTWARE, PROJECTS, SCHEMATICS, INFORMATION, SOURCE CODE, SAMPLES AND PRODUCTS. XNL FUTURE TECHNOLOGIES ASSUMES NO LIABILITY WHATSOEVER AND DISCLAIMS ANY EXPRESS, IMPLIED OR STATUTORY WARRANTY RELATING TO ITS SOFTWARE, PROJECTS, SCHEMATICS, INFORMATION, SOURCE CODE, SAMPLES AND PRODUCTS INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. IN NO EVENT SHALL XNL FUTURE TECHNOLOGIES BE LIABLE FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE, SPECIAL OR INCIDENTAL DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS AND PROFITS, BUSINESS INTERRUPTION, PERSONAL INJURY OR DEATH, MATERIAL, OR LOSS OF INFORMATION) ARISING OUT OF THE USE OR INABILITY TO USE THIS DOCUMENT EVEN IF XNL FUTURE TECHNOLOGIES HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. XNL Future Technologies makes no representations or warranties with respect to the accuracy or completeness of the contents of this publication and reserves the right to make changes to specifications and product descriptions at any time without notice. The information contained herein may be of a preliminary or advance nature and is subject to change without notice. No license, whether express, implied, arising by estoppel or other-wise, to any intellectual property rights is granted by this publication. XNL Future Technologies software, projects, schematics, information, source codes, samples or products are not designed, intended, authorized or warranted for use in or as systems for applications intended to support or sustain life, or in any other application in which the failure of XNL Future Technologies software, project, schematics, information, source code, model, sample, files or product could create a situation where personal injury, death, or severe property or environmental damage may occur. XNL Future Technologies products, projects or samples are not designed nor intended for use in weapon systems, this applies to offense and defense systems. XNL Future Technologies projects and products shall never be used to cause harm to living creatures including but not limited to humans and animals. XNL Future Technologies projects and products shall never be used to cause damage to property of any kind. Any use of XNL Future Technologies projects or products to cause harm, death or damage in any kind is strictly prohibited.
+
+XNL Future Technologies reserves the right to discontinue or make changes to its projects, products or files at any time without notice.
+
+SAFETY-CRITICAL, MILITARY, LIFE SUPPORT, MEDICAL AND AUTOMOTIVE APPLICATIONS DISCLAIMER: XNL Future Technologies products, projects, samples, source-codes, documentation, tutorials, software or any other content is not designed for and will not be used in connection with any applications where the failure of such would reasonably be expected to result in significant personal injury or death (“Safety-Critical Applications”). Safety-Critical Applications include, without limitation, life systems or devices, health (monitoring) equipment, safety or security systems, equipment or systems for the operation of nuclear facilities or other “large impact” facilities. XNL Future Technologies products, projects, samples, source-codes, documentation, tutorials, software or any other content is not designed nor intended for use in government, military or aerospace applications or environments or in any other “high-risk” facility, location or environment.
