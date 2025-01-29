@@ -16,7 +16,7 @@ TIP: If your project needs to be closed-source, then use libraries (like DLL’s
 – If you distribute a compiled stand-alone version of this project (if applicable), you must provide an additional license  
 file containing the original author’s information, project name, links, and copyright details.  
   
-<strong>What you can do with this project:</strong>  
+What you can do with this project: 
 – Use, edit/modify the code to suit your needs or your project  
 – Re-release the software (modified or unmodified) while maintaining and meeting the attribution and license requirements.  
 This for example also includes forking (or uploading) it on your own GitHub  
@@ -25,14 +25,14 @@ This for example also includes forking (or uploading) it on your own GitHub
 – Include your own copyright/attribution info when distributing modified versions, but the original credit to  
 XNL Future Technologies (including the original project name and link(s)) must remain intact.  
   
-<strong>What you can’t do with this project:</strong>  
+What you can’t do with this project:
 – Claim ownership of the software or its code.  
 – Use or claim any trademarks of XNL Future Technologies associated with the software.  
 – Remove or alter any copyright or license information in the source code or documentation.  
 – Make the software closed-source and redistribute or sell it as such (share-alike!)  
 – Change the license, license type or impose additional restrictions  
   
-<strong>Notes:</strong>  
+Notes: 
 – This simplified license is meant to clarify the main points. For complete legal information, please refer to the full license agreement.  
 – If you are using this software in a commercial context, we strongly recommend reviewing the full terms in the complete license file.  
 
