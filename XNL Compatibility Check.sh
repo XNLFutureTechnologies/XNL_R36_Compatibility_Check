@@ -18,15 +18,15 @@
 #
 #------------------------
 # Project: XNL Future Technologies R36 Compatibility Check
-# Website: http://www.teamxnl.com/XNL-R36-XCC
+# Website: http://www.teamxnl.com/R36-XCC
 # YouTube: https://www.youtube.com/@XNLFutureTechnologies
 # GitHub:  https://github.com/XNLFutureTechnologies/XNL_R36_Compatibility_Check
-# License: XNL CUSTOM (Included as LICENSE file otherwise found at: http://www.teamxnl.com/XNL-R36-XCC)
+# License: XNL CUSTOM (Included as LICENSE file otherwise found at: http://www.teamxnl.com/R36-XCC)
 #          You are free to use, modify, and distribute this software under the terms of the license mentioned above
 #          However, if you distribute a modified version or create a derivative work:
 #          1. You must provide appropriate credit to the original author(s).
 #          2. You must clearly mention on which project/program your version is based on (XNL TermCap).
-#          3. You must link back to the original source (http://www.teamxnl.com/XNL-R36-XCC).
+#          3. You must link back to the original source (http://www.teamxnl.com/R36-XCC).
 #          4. You must license your derivative work it's license must comply with the original license
 #             and can't impose additional restrictions to your users
 # 
