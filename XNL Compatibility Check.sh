@@ -17,7 +17,7 @@
 # menu (or RetroPie menu depending on your Theme).
 #
 #------------------------
-# Project: XNL Future Technologies R36 XNL TermCap
+# Project: XNL Future Technologies R36 Compatibility Check
 # Website: http://www.teamxnl.com/XNL-R36-XCC
 # YouTube: https://www.youtube.com/@XNLFutureTechnologies
 # GitHub:  https://github.com/XNLFutureTechnologies/XNL_R36_Compatibility_Check
