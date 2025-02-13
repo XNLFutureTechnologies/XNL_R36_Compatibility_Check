@@ -154,13 +154,13 @@ SystemHasMinimalVersionArkOK() {
 		
 		# IF for some reason there was previously a 'system passed' registration on this installation
 		# then we will now remove it due to this fail
-		if [ -f /home/ark/.config/.xnlft-xcc-checkpass ]; then
-			sudo rm -f /home/ark/.config/.xnlft-xcc-checkpass
+		if [ -f /home/ark/.config/xnlft/.xnlft-xcc-checkpass ]; then
+			sudo rm -f /home/ark/.config/xnlft/.xnlft-xcc-checkpass
 		fi
 
 		# make a 'XCC Failed registration' so that my other applications can detect (and warn users) that
 		# the current system has failed the XNL Compatibility Check!
-		sudo touch /home/ark/.config/.xnlft-xcc-checkfail
+		sudo touch /home/ark/.config/xnlft/.xnlft-xcc-checkfail
 		exit 1
 	fi
 	
@@ -173,13 +173,13 @@ SystemHasMinimalVersionArkOK() {
 
 		# IF for some reason there was previously a 'system passed' registration on this installation
 		# then we will now remove it due to this fail
-		if [ -f /home/ark/.config/.xnlft-xcc-checkpass ]; then
-			sudo rm -f /home/ark/.config/.xnlft-xcc-checkpass
+		if [ -f /home/ark/.config/xnlft/.xnlft-xcc-checkpass ]; then
+			sudo rm -f /home/ark/.config/xnlft/.xnlft-xcc-checkpass
 		fi
 
 		# make a 'XCC Failed registration' so that my other applications can detect (and warn users) that
 		# the current system has failed the XNL Compatibility Check!
-		sudo touch /home/ark/.config/.xnlft-xcc-checkfail
+		sudo touch /home/ark/.config/xnlft/.xnlft-xcc-checkfail
 
 		exit 1
 	fi
@@ -354,17 +354,17 @@ StartUpApp(){
 	# we can then use this in my/our other applications to for example warn the user that it is for example
 	# not recommended to install a certain driver, application etc 
 	if [[ $MainPass == "y" ]]; then
-		if [ -f /home/ark/.config/.xnlft-xcc-checkfail ]; then
-			sudo rm -f /home/ark/.config/.xnlft-xcc-checkfail
+		if [ -f /home/ark/.config/xnlft/.xnlft-xcc-checkfail ]; then
+			sudo rm -f /home/ark/.config/xnlft/.xnlft-xcc-checkfail
 		fi
 	
-		sudo touch /home/ark/.config/.xnlft-xcc-checkpass
+		sudo touch /home/ark/.config/xnlft/.xnlft-xcc-checkpass
 	else
-		if [ -f /home/ark/.config/.xnlft-xcc-checkpass ]; then
-			sudo rm -f /home/ark/.config/.xnlft-xcc-checkpass
+		if [ -f /home/ark/.config/xnlft/.xnlft-xcc-checkpass ]; then
+			sudo rm -f /home/ark/.config/xnlft/.xnlft-xcc-checkpass
 		fi
 	
-		sudo touch /home/ark/.config/.xnlft-xcc-checkfail
+		sudo touch /home/ark/.config/xnlft/.xnlft-xcc-checkfail
 	fi
 
 	dialog --title "XNL Compatibility Check Results ($XCCVersion)" --msgbox "$MessageOutput" 20 80
