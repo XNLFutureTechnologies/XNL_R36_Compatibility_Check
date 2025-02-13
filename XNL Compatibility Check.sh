@@ -152,6 +152,8 @@ SystemHasMinimalVersionArkOK() {
 	if [ ! -d "$ConfigDir" ]; then
 		dialog --backtitle "$Application" --title "Incompatibility Issue Detected!" --msgbox "Unable to detect the directory:\n$ConfigDir\n\nAre you sure that you are running ArkOS on your device?\n\nIf this folder can't even be found, then it's unfortunately a hard no in terms of compatibility.\n\nThe XNL Compatibility Check will now abort\n\n " 12 $swidth
 		
+		mkdir -p "/home/ark/.config/xnlft/"
+		
 		# IF for some reason there was previously a 'system passed' registration on this installation
 		# then we will now remove it due to this fail
 		if [ -f /home/ark/.config/xnlft/.xnlft-xcc-checkpass ]; then
@@ -163,6 +165,8 @@ SystemHasMinimalVersionArkOK() {
 		sudo touch /home/ark/.config/xnlft/.xnlft-xcc-checkfail
 		exit 1
 	fi
+
+	mkdir -p "/home/ark/.config/xnlft/"
 	
 	# Find all the update files, filter by .update prefix, and sort by the date part in the filename (and ignore any dashes)
 	local CurrentVer=$(sudo ls "$ConfigDir" -at | grep '^\.update' | sed 's/^\.update\([^-]*\).*/\1/' | head -n 1)
